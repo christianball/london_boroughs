@@ -1,0 +1,26 @@
+<h1>London Boroughs</h1>
+
+<h2><%= @borough.name %></h2>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @borough.designation %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @borough.population %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @borough.website %>
+</p>
+
+<p>
+  <%= link_to 'All boroughs', boroughs_path %>
+</p>
+
+<p>
+  <%= link_to 'Edit borough', edit_borough_path(@borough) %>
+</p>
